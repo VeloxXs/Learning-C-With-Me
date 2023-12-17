@@ -1,0 +1,48 @@
+// Muhtesem bir Not hesaplayici yaptim.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  /*int score;
+  printf("Enter a score : ");
+  scanf("%d",&score);
+
+  if(score>50){
+    printf("Congratulations you passed the exam\n");
+    printf("Your score : %d\n\n",score);
+
+  }
+  else{
+    printf("Too Bad you failed the exam\n");
+    printf("your score : %d\n\n",score);
+  }
+  printf("The program contiunes to run \n\n");
+*/
+int x;
+printf("Enter a number: ");
+scanf("%d",&x);
+
+if(x>0){
+    printf("Sayiniz pozitif bir sayidir\n");
+    if(x==100){
+        printf("Mukkemmel ! ! ");
+    }
+
+}
+else if(x<0){
+    printf("Sayiniz negatif bir sayidir");
+}
+else{
+    printf("Sayiniz sifir");
+}
+
+
+
+
+
+
+
+
+}
