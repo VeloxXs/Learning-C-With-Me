@@ -1,0 +1,44 @@
+//Ufak bir aritmetik ortalama uygulamasi
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  /*  int x, y, z;
+    printf("Bir sayi giriniz:");
+    scanf("%d", &x);
+
+
+y = x%10;
+z=(x%100)/10;
+printf("girilen sayinin birler basamagi:%d\n", y);
+printf("girilen sayinin onlar basamagi:%d\n", z);
+*/
+
+
+/*float x,y,z,a,b;
+
+printf("Pozitif bir sayi giriniz:\n");
+scanf("%f%f%f%f",&x,&y,&z,&a);
+b=(x+y+z+a)/4;
+printf("aritmetik ortalama:%f\n",b);
+
+
+
+
+return 0;
+*/
+
+
+float x,y,z,a,b;
+printf("Pozitif 4 tane sayi giriniz:");
+scanf("%f%f%f%f",x,y,z,a);
+b=(x+y+z+a)/4;
+printf("aritmetik ortalamaniz:%f",b);
+
+
+
+
+
+}
