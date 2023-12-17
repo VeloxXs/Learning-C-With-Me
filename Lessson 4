@@ -1,0 +1,36 @@
+// aslinda burada intler atandiktan sonra result ile 1-0 komutalrini girmesini sagliyoruz mesela 1.printte x==y ise 1 degilse 0 yaz gibi digerleri icinde ayni
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ /*   
+    int x, y;
+    x= 12;
+    y= 7;
+    printf("result x=y:%d\n", x==y);
+    printf("result x!=y:%d\n", x!=y);
+    printf("result x<y:%d\n", x<y);
+    printf("result x>y:%d\n", x>y);
+    printf("\n\n");
+*/
+
+/*
+int x, y;
+x=7;
+y=2;
+printf("result: %d\n",(x>5 && x<y));
+printf("\n\n");
+*/
+
+int x, y;
+x=6;
+y=5;
+printf("result:%d\n",(x>5 || x<y ));
+printf("\n\n");
+
+
+return 0;
+}
