@@ -1,0 +1,37 @@
+// Parlemento aplikasyonu yaptim
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int partyA, partyB, partyC, currentCouncilor;
+   const int sumCouncilor = 600;
+
+   printf("Meclisteki partilerin miletvekili sayilarini girinmelisiniz\n");
+   printf("A partisindeki katilimci sayisi: ");
+   scanf("%d", &partyA);
+   printf("B partisindeki katilimci sayisi: ");
+   scanf("%d", &partyB);
+   printf("C partisindeki katilimci sayisi: ");
+   scanf("%d", &partyC);
+
+
+   currentCouncilor = partyB + partyA + partyC;
+
+
+   if(currentCouncilor<sumCouncilor/2){
+    printf("Toplantinin saglanabilmesi icin yeteri kadar milletvekili yok!!\n");
+    printf("Toplanti yeter sayisi %d'dur !! \n", sumCouncilor/2);
+   }
+   else {
+    printf("Yeterli katilimci sayisi saglandigi icin toplanti baslayabilir ");
+   }
+
+
+
+
+
+
+  return 0;
+}
