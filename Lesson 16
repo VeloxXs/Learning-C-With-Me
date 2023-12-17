@@ -1,0 +1,27 @@
+// Bir telefon sirketinin konusma paket ucretini hesaplayan uygulama.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float konusmaUcreti, konusmaSuresi;
+    printf("Konusma suresini giriniz: ");
+    scanf("%f", &konusmaSuresi);
+
+    if(konusmaSuresi<=4.0){
+        konusmaUcreti= 0.30;
+    }else{
+    konusmaUcreti=(konusmaSuresi-4.0)*0.07+0.30;
+    }
+    printf("Konusma Ucreti: %.3f Tl \n", konusmaUcreti);
+
+
+
+
+
+
+
+
+    return 0;
+}
