@@ -1,0 +1,30 @@
+// Tam kare sayiyi bulan uygulama.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+
+    int number, myNumber ;
+
+    printf("Enter a positive number:");
+    scanf("%d", &number);
+
+    if(number<0){
+        printf("Girdiginiz sayi pozitif degil tekrar deneyin :)");
+    }else{
+    myNumber = sqrt(number);
+       if(myNumber*myNumber == number){
+        printf("Girdiginiz sayi '%d' tam kare bir sayidir !!", number);
+       }
+       else{
+        printf("Girdiginiz sayi tam kare bir sayi degildir !!");
+       }
+    }
+
+
+
+    return 0;
+}
