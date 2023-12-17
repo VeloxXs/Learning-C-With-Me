@@ -1,0 +1,35 @@
+/Ucgenimizin cesitini bulan uygulama.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, esitkenar, ikizkenar, cokkenar, toplamaci;
+    printf("Ucgenin 'a' acisini giriniz: ");
+    scanf("%d",&a);
+    printf("Ucgenin 'b' acisini giriniz: ");
+    scanf("%d",&b);
+    printf("Ucgenin 'c' acisini giriniz: ");
+    scanf("%d",&c);
+     toplamaci = 180;
+     if(a+b+c==toplamaci){
+
+     if(a==b && b==c && c==a){
+        printf("Ucgenimiz bir esitkenar ucgendir !! ");
+     } else if(a==b && b!=c && a!=c){
+        printf("Ucgenimiz bir ikizkenar ucgendir !!");
+     }
+     else {
+        printf("Ucgenimiz bir cokkenar ucgendir");
+     }
+
+     }else {
+        printf("Uzgunum bu acilarla bir ucgen olusturamayiz :( ");
+     }
+
+
+
+
+    return 0;
+}
