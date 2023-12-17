@@ -1,0 +1,20 @@
+// if-else dongusu
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a;
+   printf("Bir a sayisi giriniz: ");
+   scanf("%d", &a);
+
+   if(a%10 == 0){
+    printf("Girdiginiz sayi bir cift sayidir \n");
+   }
+   else{
+    printf("Girdiginiz sayi bir tek sayidir !! ");
+
+   }
+    return 0;
+}
