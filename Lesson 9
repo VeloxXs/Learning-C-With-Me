@@ -1,0 +1,100 @@
+//Mukkemmel Online Kitap Satis Uygulamasi 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   /*int x = 0;
+   int y = 0;
+printf("Enter two integers! : ");
+scanf("%d%d",&x,&y);
+if(x>y){
+    printf("First number is greater than second number ");
+}
+else if(x<y){
+    printf("First number is smaller than second number");
+}
+else {
+    printf("First number is equal second number");
+}
+*/
+/*
+int kitapfiyati, siparismiktari;
+float indirimorani,indirimsizfiyat, indirimlifiyat, sum;
+
+
+kitapfiyati=20;
+siparismiktari=0;
+printf("Kac adet kitap siparis etmek istiyorsunuz?");
+scanf("%d",&siparismiktari);
+
+if(siparismiktari>=60){
+    indirimorani=0.30;
+}
+else{
+     if(siparismiktari>=30 && siparismiktari <60){
+        indirimorani=0.20;
+     }
+     else if(siparismiktari>10 && siparismiktari<30){
+        indirimorani=0.12;
+     }
+     else{
+        indirimorani=0.01;
+     }
+}
+
+indirimsizfiyat=siparismiktari*kitapfiyati;
+printf("Kitabin indirimsiz fiyati: %f\n",indirimsizfiyat);
+indirimlifiyat=siparismiktari*kitapfiyati*indirimorani;
+printf("Kitabin indirimli fiyati: %f\n",indirimlifiyat);
+sum=indirimsizfiyat-indirimlifiyat;
+printf("Siparisinizin toplam tutari: %f \n",sum);
+
+
+
+
+
+
+
+
+
+*/
+
+int kitapfiyati, siparismiktari;
+float indirimorani,indirimsizfiyat, indirimlifiyat, sum;
+ kitapfiyati = 20;
+ siparismiktari = 0;
+ printf("Kac tane kitap almak istediginizi giriniz:");
+ scanf("%d",&siparismiktari);
+
+ if(siparismiktari>=60){
+    indirimorani=0.30;
+ }
+ else{
+    if(siparismiktari>=30 && siparismiktari<60){
+        indirimorani=0.20;
+    }
+    else if(siparismiktari>10 && siparismiktari<30){
+        indirimorani=0.10;
+    }
+    else{
+        indirimorani=0.01;
+    }
+ }
+
+ indirimsizfiyat=kitapfiyati*siparismiktari;
+ printf("Indirimsiz kitaplarin toplam fiyati: %f\n",indirimsizfiyat);
+ indirimlifiyat=kitapfiyati*indirimorani*siparismiktari;
+ printf("Indirimli kitaplarin toplam fiyati: %f\n",indirimlifiyat);
+ sum=indirimsizfiyat-indirimlifiyat;
+ printf("Toplam Tutar: %f",sum);
+
+
+
+
+
+
+
+
+}
