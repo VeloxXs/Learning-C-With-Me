@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, max, min;
+    printf("Enter three number \n");
+    printf("Birinci sayiyi giriniz: ");
+    scanf("%d",&a);
+    printf("Ikinci sayiyi giriniz: ");
+    scanf("%d",&b);
+    printf("Ucuncu sayiyi giriniz: ");
+    scanf("%d",&c);
+
+if (a>b && a>c ){
+    max = a;
+}
+else if(b>a && b>c){
+    max = b;
+}
+else{
+    max = c;
+}
+if (a<b && a<c ){
+    min = a;
+}
+else if(b<a && b<c){
+    min = b;
+}
+else{
+    min = c;
+}
+
+printf("En buyuk sayimiz: %d \n", max);
+printf("En kucuk sayimiz: %d", min);
+
+
+
+
+
+
+    return 0;
+}
