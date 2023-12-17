@@ -1,0 +1,60 @@
+// Telefon Telekom uygulamasi yaptim 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int  grln;
+int  hak=3;
+int  parola=1234;
+   float odenecekFatura,eskiBirimFiyat,yeniBirimFiyat;
+   float enflasyon,eskiAboneUcreti,yeniAboneUcreti;
+   int yeniOkuma,eskiOkuma,toplamHarcananElektrik;
+
+while(hak>0)
+{
+    printf("lutfen sifrenizi giriniz\n");
+    scanf("%d",&grln);
+
+
+    if(grln==parola)
+    {
+    printf("Hesabiniza hosgeldiniz!\n");
+
+    printf("Enflasyon oranini giriniz:");
+    scanf("%f",&enflasyon);
+
+    printf("Onceki aya ait birim fiyat miktarini giriniz:");
+    scanf("%f",&eskiBirimFiyat);
+
+    printf("Onceki aya ait abonelik ucretini giriniz:");
+    scanf("%f",&eskiAboneUcreti);
+
+    printf("Bir onceki aya ait okuma degerini giriniz:");
+    scanf("%d",&eskiOkuma);
+
+    printf("Bu aya ait okuma degerini giriniz:");
+    scanf("%d",&yeniOkuma);
+
+    toplamHarcananElektrik = yeniOkuma-eskiOkuma;
+    yeniBirimFiyat = eskiBirimFiyat*(1+enflasyon/100);
+    yeniAboneUcreti = eskiAboneUcreti*(1+enflasyon/100);
+    odenecekFatura = toplamHarcananElektrik*yeniBirimFiyat+yeniAboneUcreti;
+    printf("\n odeyeceginiz fatura tutari:%f\n\n",odenecekFatura);
+
+
+
+}
+
+ else if(grln!=parola)
+    {
+        hak--;
+        printf("kalan giris hakki:%d\n",hak);
+    }
+
+}
+if(hak==0){
+        printf("hesabiniz bloke olmustur");
+    }
+}
