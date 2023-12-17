@@ -1,0 +1,28 @@
+// Yaptigim bu algoritmada girilen sayinin benim ozel sayim olup olmadigini buluyoruz
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int number, newNumber, part1, part2;
+    printf("4 Basamakli bir sayi giriniz:");
+    scanf("%d", &number);
+
+
+   part1=number/100;
+   part2=number%100;
+   newNumber=(part1+part2)*(part1+part2);
+
+    if(number==newNumber){
+        printf(" Tebrikler Ozel sayiyi buldunuz !!! <3 \n");
+        printf(" Girmis oldugunuz sayi ---> %d", number);
+    }
+    else{
+        printf(" Cok Uzgunum Girdiginiz sayi ozel sayi degildi !!\n");
+        printf("Girmis oldugunuz sayi ---> %d", number);
+    }
+   
+return 0;
+}
