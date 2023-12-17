@@ -1,0 +1,68 @@
+// Yazilan numaranin hangi gune denk geldigini bulan uygulama.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ /*  
+int day ;
+   printf("Bir sayi secin ve hangi gune karsilik geldigini bulun !! ");
+   scanf("%d",&day);
+   switch(day){
+        case 1 : printf("Monday \n");
+           break; // eger buraya break koymazsak hem monday yazar hem tuesday yazar
+        case 2 : printf("Tuesday \n");
+          break;
+        case 3 : printf("Wednesday \n");
+          break;
+        case 4 : printf("Thursday \n");
+          break;
+        case 5 : printf("Friday \n");
+          break;
+        case 6 : printf("Saturday \n");
+          break;
+        case 7 : printf("sunday \n");
+          break;
+        default :printf("Boyle bir gun yok !!");
+        break;
+}
+*/
+
+/*
+int a=5 ;
+(a==5)? printf("30\n") : printf("-20\n");
+
+switch(a){
+ case 1: printf("Monday\n");
+ break;
+ case 2: printf("Tuesday\n");
+ break;
+ case 3:printf("Carsamba\n");
+ break;
+ case 4: printf("Persembe\n");
+ break;
+ case 5: printf("Cuma\n");
+break;
+
+
+}
+
+*/
+// Burdan sonrasi ise x eger 7 olsa z 19 olacakti y eger 12 olursa 10 olur olmazsa -90 olur.
+int x, y, z ;
+x=2;
+y=22;
+ switch(x){
+      case 7: z=19;
+      break;
+      default:switch (y){
+      case 12: z=10;break;
+      default: z=-90;break;
+      }
+ }
+printf("%d\n",z);
+
+
+   return 0;
+}
