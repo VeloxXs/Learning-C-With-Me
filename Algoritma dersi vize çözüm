@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int not;
+    int sira=1;
+
+
+
+    while(not!=-1){
+             printf("%dth Sinav notunu giriniz: ", sira);
+             scanf("%d", &not);
+             sira++;
+
+         if(not>=80 && not<101){
+            printf("Gecti -A \n");
+            //break;
+         }else if(not>=70 && not<80){
+            printf("Gecti -B \n");
+            //break;
+         }else if(not>=60 && not<70){
+            printf("Gecti -C \n");
+            //break;
+         }else if(not>=50 && not<60){
+            printf("Sartli gecti -D \n");
+            //break;
+         }else if (not<50 && not>=0)
+            printf("Kaldi -F \n");
+            //break;
+
+    }
+
+      if(not<0 && not!=-1){
+        printf("Lutfen pozitif bir sayi giriniz !!");
+      }else if(not>100){
+        printf("Lutfen 100den kucuk bir sayi giriniz !!");
+      }
+
+      if(not==-1){
+        printf("Uygulama sonlanmistir. ");
+      }
+
+
+
+
+
+
+    return 0;
+}
