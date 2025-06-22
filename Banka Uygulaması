@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int sifre =5353;
+    int hak =3;
+    float para= 20000;
+    int grln, secenek, yon,hayir,evet, ay, ad, tc;
+    float islemTutari=2.75;
+    float girilecekPara, faizliPara,gonderilecekTutar;
+    float faizo= 3.18;
+
+    while (hak>0){
+      printf("Lutfen sifrenizi giriniz: ");
+      scanf("%d", &grln);
+
+    if(grln==sifre){
+        printf("Hesabiniza hosgeldiniz.\n");
+        printf("Hesabinizda bulunan miktar --> %f \n", para);
+        printf("* * * * * * * * * * * * * * * * * * * \n   1- Vadeli hesap acilisi           \n   2- Faiz Orani hesaplama           *\n");
+        printf("*   3- Baska hesaba para gonderin     \n   4- Altin-Doviz                    \n * * * * * * * * * * * * * * * * * * *\nBekleniyor...\n");
+
+     scanf("%d",&secenek);
+ while(secenek!=0){
+     scanf("%d",&secenek);
+           switch(secenek){
+
+       case 1:
+        printf("Vadeli hesap acilisana hosgeldiniz\n");
+        printf("Hesabi kendi adiniza mi acacksiniz (evet(1)hayir(2))");
+        scanf("%d",&yon);
+         if(yon==1){
+            printf("Tc Kimlik No:\n Ad:\n Soyad:\n Girmis oldugunuz bilgiler icin tesekkur ederiz islemler tamamlandiktan sonra sms ile bilgilendirileceksiniz.");
+            scanf("%d%d",&tc,&ad);
+         }else{
+         printf("Baskasinin adina hesap acmak icin banka subesine gelmeniz gerekmektedir !!");
+         }
+        break;
+        printf("Baska islem yapmak icin tekrar tuslama yapiniz");
+       case 2:
+        printf("Faiz hesaplamaya Hosgeldiniz.\n");
+        printf("Faize yatirmak istediginiz tutari ve tutmak istediginiz ayi giriniz.\n");
+        printf("Ay:");
+        scanf("%d",&ay);
+        printf("Tutar:");
+        scanf("%f", &girilecekPara);
+        faizliPara= girilecekPara+((girilecekPara*faizo/100)*ay);
+        printf("Faizli para orani= %f ", faizliPara);
+        break;
+
+       case 3:
+        printf("Baska hesaba para gondermeye hosgeldiniz.\n");
+        printf("Gondermek istediginiz tutari giriniz:");
+        scanf("%f",&gonderilecekTutar);
+        printf("Islem tutari: 2.75\n");
+        printf("Yeni Hesap bakiyesi %f\n", para-gonderilecekTutar-islemTutari);
+        break;
+
+    }
+
+        //printf("Baska islem yapmak icin secenek giriniz (0 to exit)= ");
+       // scanf("%d", &secenek);
+
+
+    }
+
+    }else if(grln!=sifre){
+        hak--;
+        printf("Yanlis sifre girdiniz");
+        printf("Kalan giris hakki: %d\n", hak);
+      }
+
+     if(hak==0){
+        printf("Hesabiniz bloke olmustur. Lutfen musteri hizmetleriyle iletisime geciniz");
+     }
+
+
+
+
+
+}
+   return 0;
+}
